@@ -1,0 +1,423 @@
+
+body {
+    background-color: rgb(226, 226, 226);
+
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: lightskyblue;
+  }
+  
+  .active {
+    background-color: lightskyblue;
+  }
+  body {
+    background-size: cover;
+    font-family: Montserrat;
+}
+
+.logo {
+    width: 213px;
+    height: 10px;
+    margin: 30px auto;
+}
+
+.login-block {
+    width: 320px;
+    padding: 20px;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 5px;
+    border-top: 5px solid blue;
+    margin: 0 auto;
+    margin-top: 20px;  
+}
+
+.login-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.login-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+
+.login-block input#username {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#username:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #04AA6D;
+}
+
+.login-block button {
+    width: 100%;
+    height: 40px;
+    background: blue;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid blue;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: lightskyblue;
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.message-block{
+    width: 320px;
+    padding: 20px;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 5px;
+    border-top: 5px solid blue;
+    margin: 0 auto; 
+    margin-top: 150px;
+}
+
+
+
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: auto;
+    border-radius: 10px;
+
+}
+th, td {
+    text-align: center;
+}
+
+tr{
+    padding-left: 2px;
+}
+
+tr:nth-child(even) {
+    background-color: skyblue;
+}
+tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+.table{
+    width: 100%;
+    background:grey;
+    border-radius: 5px;
+    border-top: 5px solid blue;
+    margin: 0 auto;
+    margin-top: 0px;  
+    overflow-y: scroll;
+    max-height: 500px;
+}
+.table thead th {
+    position: sticky;
+    top: 0;
+    margin-top: 0px;
+    background-color: white;
+    padding-top: 10px;
+
+}
+
+.table1{
+    width: 100%;
+}
+
+.addbtn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #333;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;    
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 20px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+.addbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.addbtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.addbtn:hover span {
+    padding-right: 25px;
+}
+  
+.addbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.edit {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #333;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;    
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 20px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+}
+  
+.edit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.edit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.edit:hover span {
+    padding-right: 25px;
+}
+  
+.edit:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.enroll {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #333;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;    
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 20px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+}
+  
+.enroll span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.enroll span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.enroll:hover span {
+    padding-right: 25px;
+}
+  
+.enroll:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.cancel {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #333;
+    border: none;
+    color: red;
+    text-align: center;    
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 20px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+}
+  
+.cancel span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.cancel span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.cancel:hover span {
+    padding-right: 25px;
+}
+  
+.cancel:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.delete {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #333;
+    border: none;
+    color: red;
+    text-align: center;    
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 20px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+}
+  
+.delete span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.delete span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.delete:hover span {
+    padding-right: 25px;
+}
+  
+.delete:hover span:after {
+    opacity: 1;
+    right: 0;
+}
